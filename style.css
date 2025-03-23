@@ -1,0 +1,110 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+nav
+{
+    height: 8vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+h1
+{
+    line-height: 3rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+img
+{
+    height: 16vh;
+    width: 10vw;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.container
+{
+    display: grid;
+    margin-top: 8vh;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    align-content: center;
+    justify-content: center;
+    row-gap: 2rem;
+}
+.button
+{
+    width: 11vw;
+    background-color: white;
+    border: 0px solid black;
+    border-radius: 50%;
+}
+.button:hover
+{
+    opacity: 0.8;
+    cursor:pointer;
+    background-color: black;
+    transition: all 0.5s;
+}
+.scorePlayer
+{
+    display: inline-block;
+    position: relative;
+    bottom: 30vh;
+    margin-left: 5vw;
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.scoreComputer
+{
+    float: right;
+    position: relative;
+    bottom: 30vh;
+    margin-right: 5vw;
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.message
+{
+    /* display: inline; */
+    background-color:rgb(23, 22, 22);
+    color: white;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: larger;
+    width: 20vw;
+    margin: auto;
+    position: relative;
+    bottom: 80px;
+}
+@media only screen and (max-width: 936px){
+    .container{
+        display: flex;
+        margin-top: 30vh;
+    }
+    .message{
+        font-size: x-small;
+    }
+}
+@media only screen and (max-width: 552px){
+    .container{
+        display: flex;
+        margin-top: 20vh;
+    }
+    .message{
+        font-size: x-small;
+    }
+    .scoreComputer{
+        bottom: 0;
+    }
+    .scorePlayer{
+        bottom: 0;
+    }
+}
